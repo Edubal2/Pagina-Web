@@ -1,0 +1,117 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(200, 200, 200);
+    text-align: center;
+    margin: 0 ;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 80, 255);
+}
+
+
+header {
+    background: rgb(121, 231, 125);
+    color: rgb(255, 255, 255);
+    text-shadow:rgb(200, 200, 200) 1px 1px 1px; ;
+    border: 3px rgb(0, 192, 3) solid;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+
+h1  {
+    margin-top: 0;
+    font-size: 300%;
+}
+
+.pelis h2 {
+    color: rgb(0, 80, 255);
+}
+
+.pelis p {
+    color: rgb(255, 122, 122);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.pelis {
+    flex: 1;
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0;
+    border: 3px rgb(0, 192, 3) solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    background-color: #88d592;
+    margin-bottom: 20px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #F1BEB5;
+
+}
+
+
+
+
+
+
+/* Animaciones */
+
+.sideways {
+    animation: sideways 30s linear infinite;
+}
+
+@keyframes sideways {
+    0%, 50%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(45vw);
+    }
+
+    75% {
+        transform: translateX(-45vw);
+    }
+}
+
+.sideways2 {
+    animation: sideways2 30s  infinite linear;
+}
+
+@keyframes sideways2 {
+    0%, 50%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-45vw);
+    }
+
+    75% {
+        transform: translateX(45vw);
+    }
+}
